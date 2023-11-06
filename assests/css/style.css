@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: "Oswald", sans-serif;
+}
 /* General styles*/
 body{
     min-height : 100vh;/*using min-height will allow it to streth larger than the height of the screenwhen thiers enough content on the page when the user needs to scroll*/
