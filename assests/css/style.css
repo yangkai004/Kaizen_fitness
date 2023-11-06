@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+/* General styles*/
+body{
+    min-height : 100vh;/*using min-height will allow it to streth larger than the height of the screenwhen thiers enough content on the page when the user needs to scroll*/
+    /*using display flex and display direction to column will show our elements underneath eachother */
+    display: flex;
+    flex-direction: column;
+    /*Generic project styles*/
+    color: rebeccapurple;
+}
+
+
 /* Header */
 header{
     background-color: bisque;
@@ -12,6 +23,8 @@ header{
 /* Main content */
 main{
     background-color: royalblue;
+    /*Added flex shorthand to take up any surplus space to push footer down*/
+    flex: 1 0 auto;
 }
 
 /* Footer */
