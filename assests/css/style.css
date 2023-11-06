@@ -9,6 +9,9 @@
 
 h1 {
     font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #eee;
 }
 /* General styles*/
 body{
@@ -31,6 +34,10 @@ header{
     box-shadow: 0 2px 2px #fafafa;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 /* Main content */
 main{
     background-color: royalblue;
