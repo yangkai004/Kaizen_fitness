@@ -34,10 +34,13 @@ header{
     box-shadow: 0 2px 2px #fafafa;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
 }
 
+/* This styling is for removing the blue default anchor color and default underline text decoration */
 header a {
     text-decoration: none;
     color: inherit;
 }
+
+/* This styling is to remove the default bullet pionts that comes with unordered list and to also style the navitems */
 #navmenu {
   font-size: 110%;
   letter-spacing: 4px;
@@ -48,8 +51,20 @@ header a {
     margin-bottom: 1em;
 }
 
+/* This styling is to add a line under each page so anyone using the webiste can see where they are in the website */
 #locate{
     border-bottom: 1px solid #a4969b;
+}
+
+/* Navbar styles with dropdown toggle */
+nav { 
+    position: absolute;
+    box-shadow: 0 2px 2px #fafafa;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
 }
 
 /* Main content */
