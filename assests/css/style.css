@@ -38,12 +38,25 @@ header a {
     text-decoration: none;
     color: inherit;
 }
+#navmenu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
+}
+
+#navmenu > li{
+    margin-bottom: 1em;
+}
+
+#locate{
+    border-bottom: 1px solid #a4969b;
+}
+
 /* Main content */
 main{
     background-color: royalblue;
     /* Added flex shorthand to take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
 }
 
 /* Footer */
