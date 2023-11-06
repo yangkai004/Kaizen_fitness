@@ -32,6 +32,9 @@ header{
     z-index: 99; /* I used z-index value of 99 to make sure its layered on top of any other elements that have an z-index later on */
     width: 100%; 
     box-shadow: 0 2px 2px #fafafa;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /* This styling is for removing the blue default anchor color and default underline text decoration */
@@ -65,16 +68,29 @@ nav {
     left: 0;
     padding: 0 1rem;
     display: none;
+    top: 100%;
 }
 
+#nav-toggler:checked~nav {
+  display: block;
+}
+
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-label {
+    font-size: 2rem;
+}
 /* Main content */
-main{
+main {
     background-color: royalblue;
     /* Added flex shorthand to take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 75px;
 }
 
 /* Footer */
-footer{
+footer {
     background-color: orangered;
 }
