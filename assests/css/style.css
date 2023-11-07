@@ -84,13 +84,36 @@ nav {
 }
 /* Main content */
 main {
-    background-color: royalblue;
+    background-color: black;
     /* Added flex shorthand to take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 75px;
+    top: 0%;
 }
 
 /* Footer */
 footer {
     background-color: orangered;
+}
+
+/* Media query: tablets and larger (768 and up)*/
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    
+    #navmenu {
+        display: flex; /* This is for making the nav items into rows format */
+    }
+
+    #navmenu > li {
+        padding-left: 1rem; /*  this for spacing out the nav items */
+    }
+
+    .nav-toggler-label {
+        display: none;
+    }
 }
