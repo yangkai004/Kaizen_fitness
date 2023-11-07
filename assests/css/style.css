@@ -11,7 +11,6 @@ h1 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #eee;
 }
 /* General styles*/
 body{
@@ -31,7 +30,7 @@ header{
     position:  fixed;/* I used position fixed to allow the navbar to scroll along */
     z-index: 99; /* I used z-index value of 99 to make sure its layered on top of any other elements that have an z-index later on */
     width: 100%; 
-    box-shadow: 0 2px 2px #fafafa;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
+    box-shadow: 0 2px 2px #7c7878;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -62,7 +61,7 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav { 
     position: absolute;
-    box-shadow: 0 2px 2px #fafafa;
+    box-shadow: 0 2px 2px #7c7878;
     background-color: #000;
     width: 100%;
     left: 0;
@@ -87,8 +86,8 @@ main {
     background-color: black;
     /* Added flex shorthand to take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 75px;
-    top: 0%;
+    margin-top: 4.8rem;
+    
 }
 
 /* Footer */
@@ -96,6 +95,13 @@ footer {
     background-color: orangered;
 }
 
+
+/* Certain iphones like the iphone  and largerx */
+@media screen and (min-width: 350px) {
+    main {
+    margin-top: 2.4rem;
+  }
+}
 /* Media query: tablets and larger (768 and up)*/
 @media screen and (min-width: 768px) {
     nav {
@@ -114,6 +120,24 @@ footer {
     }
 
     .nav-toggler-label {
-        display: none;
+        display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
+    }
+
+    main {
+        margin-top: 53px;
     }
 }
+
+
+/* Media query: laptops and larger (992 and up)*/
+@media screen and (min-width: 992px) {
+    main {
+        margin-top: 3.2rem;
+    }
+
+    #navmenu:hover {
+        border-bottom: 1px  solid #a4969b;
+    }
+}
+
+/* Media query: desktops and lar*/
