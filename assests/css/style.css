@@ -81,20 +81,57 @@ nav {
 .nav-toggler-label {
     font-size: 2rem;
 }
+
 /* Main content */
 main {
     background-color: black;
     /* Added flex shorthand to take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 4.8rem;
-    
+}
+
+.hrstyle{
+    border: 1px inset #7c7878;
 }
 
 /* Footer */
 footer {
-    background-color: orangered;
+    background-color: black;
+    margin-top: auto;  
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
 }
 
+#social-media{
+    list-style-type: none;
+    display: flex;
+}
+
+
+#social-media i{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.sui{
+    text-decoration: underline;
+}
+
+#ul2 {
+    list-style-type: none;
+}
+
+
+.suii {
+    text-decoration: underline;
+}
+
+.ul2 i {
+    font-size: large;
+}
 
 /* Certain iphones like the iphone  and largerx */
 @media screen and (min-width: 350px) {
@@ -135,9 +172,8 @@ footer {
         margin-top: 3.2rem;
     }
 
-    #navmenu:hover {
+    #navmenu a:hover {
         border-bottom: 1px  solid #a4969b;
     }
 }
 
-/* Media query: desktops and lar*/
