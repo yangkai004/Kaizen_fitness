@@ -64,7 +64,7 @@ header a {
 nav {
   position: absolute;
   box-shadow: 0 2px 2px #7c7878;
-  background-color: #000;
+  background-color: rgba (0, 0, 10, 0.9);
   width: 100%;
   left: 0;
   padding: 0 1rem;
@@ -304,7 +304,7 @@ footer {
 /* Media query: Desktops and larger ( 1280 and up)*/
 @media screen and (min-width: 1440px) {
     #hero-image {
-        height: 730px;
+        height: 725px;
         width: auto;
     }
     
