@@ -1,45 +1,47 @@
 /* Imported google font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 /* General styles*/
-body{
-    min-height : 100vh;/*using min-height will allow it to stretch larger than the height of the screen when thiers enough content on the page when the user needs to scroll*/
-    /* using display flex and display direction to column will show our elements underneath eachother */
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+body {
+  min-height: 100vh; /*using min-height will allow it to stretch larger than the height of the screen when thiers enough content on the page when the user needs to scroll*/
+  /* using display flex and display direction to column will show our elements underneath eachother */
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Header */
-header{
-    background-color: black;
-    padding: 0 1rem;/* I added padding left and right to prevent text from sticking to the side of the screen */
-    position:  fixed;/* I used position fixed to allow the navbar to scroll along */
-    z-index: 99; /* I used z-index value of 99 to make sure its layered on top of any other elements that have an z-index later on */
-    width: 100%; 
-    box-shadow: 0 2px 2px #7c7878;/* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+header {
+  background-color: black;
+  padding: 0 1rem; /* I added padding left and right to prevent text from sticking to the side of the screen */
+  position: fixed; /* I used position fixed to allow the navbar to scroll along */
+  z-index: 99; /* I used z-index value of 99 to make sure its layered on top of any other elements that have an z-index later on */
+  width: 100%;
+  box-shadow: 0 2px 2px #7c7878; /* I added box-shadow to indicate that its layered on top of the other content by creating an effect of a shadow below it */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 /* This styling is for removing the blue default anchor color and default underline text decoration */
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* This styling is to remove the default bullet pionts that comes with unordered list and to also style the navitems */
@@ -49,131 +51,272 @@ header a {
   list-style-type: none;
 }
 
-#navmenu > li{
-    margin-bottom: 1em;
+#navmenu > li {
+  margin-bottom: 1em;
 }
 
 /* This styling is to add a line under each page so anyone using the webiste can see where they are in the website */
-#locate{
-    border-bottom: 1px solid #a4969b;
+#locate {
+  border-bottom: 1px solid #a4969b;
 }
 
 /* Navbar styles with dropdown toggle */
-nav { 
-    position: absolute;
-    box-shadow: 0 2px 2px #7c7878;
-    background-color: #000;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    display: none;
-    top: 100%;
+nav {
+  position: absolute;
+  box-shadow: 0 2px 2px #7c7878;
+  background-color: #000;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  display: none;
+  top: 100%;
 }
 
-#nav-toggler:checked~nav {
+#nav-toggler:checked ~ nav {
   display: block;
 }
 
 #nav-toggler {
-    display: none;
+  display: none;
 }
 
 .nav-toggler-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main content */
 main {
-    background-color: black;
-    /* Added flex shorthand to take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 4.8rem;
+  background-color: black;
+  /* Added flex shorthand to take up any surplus space to push footer down */
+  flex: 1 0 auto;
+  margin-top: 4.8rem;
 }
 
-.hrstyle{
-    border: 1px inset #7c7878;
+/*hero section*/
+#hero-image {
+  width: auto;
+  height: 600px; 
+  overflow: scroll;
+  background: url("/Users/abdiqaniwarsame/Documents/GitHub/Kaizen_fitness/assests/images/hero image main.jpg")
+    no-repeat center center / cover;
+  text-align: left;
+  position: relative;
+}
+
+#hero-section {
+    position: absolute;
+    margin-top: 24rem;
+    padding: 5%;
+    width: auto;
+    color: honeydew;
+    text-align: justify;
+    position: static;
+}
+
+#hero-section h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.7em;
+    font-weight: 900;
+    margin-bottom: 1px;
+    color: honeydew;
+}
+
+
+#hero-section p {
+    font-family: "lato", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.7em;
+}
+
+
+.hrstyle {
+  border: 1px inset #7c7878;
 }
 
 /* Footer */
 footer {
-    background-color: black;
-    margin-top: auto;  
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 1rem;
+  background-color: black;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem;
 }
 
-#social-media{
-    list-style-type: none;
-    display: flex;
+#social-media {
+  list-style-type: none;
+  display: flex;
 }
 
-
-#social-media i{
-    padding: 5px;
-    font-size: 20px;
+#social-media i {
+  padding: 10px;
+  font-size: 20px;
 }
 
-.sui{
-    text-decoration: underline;
+.sui {
+  text-decoration: underline;
 }
 
 #ul2 {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 
 .suii {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.ul2 i {
-    font-size: large;
-}
-
-/* Certain iphones like the iphone  and largerx */
-@media screen and (min-width: 350px) {
-    main {
+/* Certain phones like the iphone  and largerx */
+@media screen and (min-width: 375px) {
+  main {
     margin-top: 2.4rem;
   }
+  #hero-image {
+    height: 639px;
+    width: auto;
+  }
+  #hero-section {
+    margin-top: 21em;
+    text-align: left;
+    
+  }
+  #hero-section h1 {
+    font-size: 1.7em;
+    font-weight: 900;
+  }
+
+  #hero-section p{
+    font-size: 0.9em;
+    font-weight: 700;
+  }
 }
-/* Media query: tablets and larger (768 and up)*/
-@media screen and (min-width: 768px) {
-    nav {
-        display: block;
-        position: relative;
-        width: fit-content;
-        padding-right: 1rem;
+
+
+@media screen and (min-width: 425px) {
+    #hero-image {
+        height: 639px;
+        width: auto;
     }
     
-    #navmenu {
-        display: flex; /* This is for making the nav items into rows format */
+    #hero-section {
+        margin-top: 25rem;
     }
+    #hero-section h1 {
+        font-weight: 900;
+        font-size: 1.8rem;
 
-    #navmenu > li {
-        padding-left: 1rem; /*  this for spacing out the nav items */
     }
-
-    .nav-toggler-label {
-        display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
-    }
-
-    main {
-        margin-top: 53px;
+    #hero-section p {
+        font-size: 1rem;
     }
 }
 
+/* Media query: tablets and larger (768 and up)*/
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #navmenu {
+    display: flex; /* This is for making the nav items into rows format */
+  }
+
+  #navmenu > li {
+    padding-left: 1rem; /*  this for spacing out the nav items */
+  }
+
+  .nav-toggler-label {
+    display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
+  }
+
+  main {
+    margin-top: 53px;
+  }
+
+  #hero-image{
+    height: 621px;
+  }
+
+  #hero-section {
+    margin-top: 25rem;
+  }
+
+  #hero-section h1 {
+    font-size: 2rem;
+  }
+
+  #hero-section p {
+    font-size: 1.2rem;
+  }
+}
 
 /* Media query: laptops and larger (992 and up)*/
 @media screen and (min-width: 992px) {
-    main {
-        margin-top: 3.2rem;
-    }
+  main {
+    margin-top: 3.2rem;
+  }
 
-    #navmenu a:hover {
-        border-bottom: 1px  solid #a4969b;
+  #navmenu a:hover {
+    border-bottom: 1px solid #a4969b;
+  }
+  #hero-image {
+    height: 622px;
+    width: auto;
+  }
+
+  #hero-section {
+    margin-top: 18rem;
+  }
+
+  #hero-section h1 {
+    font-weight: 900;
+    font-size: 2.1rem;
+
+  }
+  #hero-section p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    #hero-image {
+        height: 623px;
+        width: auto;
+    }
+    
+    #hero-section {
+        margin-top: 22rem;
+    }
+    #hero-section h1 {
+        font-weight: 900;
+        font-size: 2.1rem;
+
+    }
+    #hero-section p {
+        font-size: 1.4rem;
     }
 }
 
+/* Media query: Desktops and larger ( 1280 and up)*/
+@media screen and (min-width: 1440px) {
+    #hero-image {
+        height: 730px;
+        width: auto;
+    }
+    
+    #hero-section {
+        margin-top: 20rem;
+    }
+    #hero-section h1 {
+        font-weight: 900;
+        font-size: 4.4rem;
+
+    }
+    #hero-section h1 {
+        font-size: 3.1rem;
+    }
+}
