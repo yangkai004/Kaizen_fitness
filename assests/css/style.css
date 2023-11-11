@@ -1,4 +1,5 @@
 /* Imported google font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
@@ -86,7 +87,7 @@ nav {
 
 /* Main content */
 main {
-  background-color: black;
+  background-color: #454343;
   /* Added flex shorthand to take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 4.8rem;
@@ -95,7 +96,7 @@ main {
 /*hero section*/
 #hero-image {
   width: auto;
-  height: 600px; 
+  height: 600px;
   overflow: scroll;
   background: url("/Users/abdiqaniwarsame/Documents/GitHub/Kaizen_fitness/assests/images/hero image main.jpg")
     no-repeat center center / cover;
@@ -104,31 +105,213 @@ main {
 }
 
 #hero-section {
-    position: absolute;
-    margin-top: 24rem;
-    padding: 5%;
-    width: auto;
-    color: honeydew;
-    text-align: justify;
-    position: static;
+  position: absolute;
+  margin-top: 24rem;
+  padding: 5%;
+  width: auto;
+  color: honeydew;
+  text-align: justify;
+  position: static;
 }
 
 #hero-section h1 {
-    font-family: "Playfair Display", sans-serif;
-    font-size: 1.7em;
-    font-weight: 900;
-    margin-bottom: 1px;
-    color: honeydew;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.7em;
+  font-weight: 900;
+  margin-bottom: 1px;
+  color: honeydew;
 }
-
 
 #hero-section p {
-    font-family: "lato", sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 0.7em;
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.7em;
 }
 
+#section-grey {
+  border: 1px inset #454343;
+}
+
+#section-about {
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 2px;
+  border: 1px inset white;
+}
+
+#section-about h2 {
+  line-height: 1rem;
+  font-weight: 800;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+#section-about p {
+  line-height: 10px;
+}
+
+#section-qualification {
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 2px;
+  border: 1px outset whitesmoke;
+}
+
+#section-qualification h2 {
+  line-height: 1rem;
+  font-weight: 800;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+#section-qualification p {
+  line-height: 10px;
+}
+
+#section-whatweoffer {
+  font-family: "Bungee Outline", sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  margin: 12px;
+}
+
+#section-assessments {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  margin: 0;
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 3px;
+}
+
+#section-assessments img {
+  max-height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#section-assessments h3 {
+  text-decoration: underline;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+#section-assesments p {
+  line-height: 5px;
+  text-align: justify;
+}
+
+#section-personal {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  font-size: 10px;
+  font-style: italic;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 8px;
+}
+
+#section-personal img {
+  max-height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#section-personal h3 {
+  text-decoration: underline;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+#section-personal p {
+  text-align: justify;
+  word-spacing: 0.7px;
+  padding: 2px;
+}
+
+#section-nutrition {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  margin: 0;
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 3px;
+}
+
+#section-nutrition img {
+  max-height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#section-nutrition h3 {
+  text-decoration: underline;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+#section-nutrition p {
+  word-spacing: 0.7px;
+  padding: 2px;
+}
+
+#section-equipment {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  font-size: 10px;
+  font-style: italic;
+  padding: 0.4rem;
+  margin: 5px;
+  color: #ffffff;
+  margin: 8px;
+}
+
+#section-equipment img {
+  max-height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#section-equipment h3 {
+  text-decoration: underline;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+#section-equipment p {
+  text-align: justify;
+  word-spacing: 0.7px;
+  padding: 2px;
+}
 
 .hrstyle {
   border: 1px inset #7c7878;
@@ -179,37 +362,34 @@ footer {
   #hero-section {
     margin-top: 21em;
     text-align: left;
-    
   }
   #hero-section h1 {
     font-size: 1.7em;
     font-weight: 900;
   }
 
-  #hero-section p{
+  #hero-section p {
     font-size: 0.9em;
     font-weight: 700;
   }
 }
 
-
 @media screen and (min-width: 425px) {
-    #hero-image {
-        height: 639px;
-        width: auto;
-    }
-    
-    #hero-section {
-        margin-top: 25rem;
-    }
-    #hero-section h1 {
-        font-weight: 900;
-        font-size: 1.8rem;
+  #hero-image {
+    height: 639px;
+    width: auto;
+  }
 
-    }
-    #hero-section p {
-        font-size: 1rem;
-    }
+  #hero-section {
+    margin-top: 25rem;
+  }
+  #hero-section h1 {
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  #hero-section p {
+    font-size: 1rem;
+  }
 }
 
 /* Media query: tablets and larger (768 and up)*/
@@ -237,20 +417,211 @@ footer {
     margin-top: 53px;
   }
 
-  #hero-image{
-    height: 621px;
+  #hero-image {
+    height: 1328px;
   }
 
   #hero-section {
-    margin-top: 25rem;
+    margin-top: 50rem;
   }
 
   #hero-section h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   #hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  #section-about {
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 5px;
+    border: 2px inset white;
+  }
+
+  #section-about h2 {
+    line-height: 1rem;
+    font-weight: 900;
+    padding: 12px;
+    text-decoration: underline;
+  }
+
+  #section-about p {
+    line-height: 25px;
+    word-spacing: 4px;
+    padding: 5px;
+    margin: 1px;
+  }
+
+  #section-qualification {
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 5px;
+    border: 2px inset white;
+  }
+
+  #section-qualification h2 {
+    line-height: 1rem;
+    font-weight: 900;
+    padding: 12px;
+    text-decoration: underline;
+  }
+
+  #section-qualification p {
+    line-height: 25px;
+    word-spacing: 4px;
+    padding: 5px;
+    margin: 1px;
+  }
+
+  #section-whatweoffer {
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    margin: 12px;
+  }
+
+  #section-assessments {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-assessments img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-assessments h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 2.6rem;
+  }
+
+  #section-assesments p {
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+  }
+
+  #section-personal {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    font-size: 25px;
+    font-style: italic;
+    padding: 0.4rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-personal img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-personal h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 800;
+    font-size: 2.6rem;
+  }
+
+  #section-personal p {
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+  }
+
+  #section-nutrition {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.4rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-nutrition img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-nutrition h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 2.6rem;
+  }
+
+  #section-nutrition p {
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+  }
+
+  #section-equipment {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    font-size: 25px;
+    font-style: italic;
+    padding: 0.4rem;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-equipment img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-equipment h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 2.6rem;
+  }
+
+  #section-equipment p {
+    text-align: justify;
+    word-spacing: 0.7px;
+  }
+
+  footer {
+    font-size: 1.9rem;
   }
 }
 
@@ -275,7 +646,6 @@ footer {
   #hero-section h1 {
     font-weight: 900;
     font-size: 2.1rem;
-
   }
   #hero-section p {
     font-size: 1.4rem;
@@ -283,40 +653,238 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    #hero-image {
-        height: 623px;
-        width: auto;
-    }
-    
-    #hero-section {
-        margin-top: 22rem;
-    }
-    #hero-section h1 {
-        font-weight: 900;
-        font-size: 2.1rem;
+  #hero-image {
+    height: 1675px;
+    width: auto;
+  }
 
-    }
-    #hero-section p {
-        font-size: 1.4rem;
-    }
+  #hero-section {
+    margin-top: 58rem;
+  }
+  #hero-section h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
+  #hero-section p {
+    font-size: 2rem;
+  }
+
+
+  #section-about {
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 8px;
+    border: 2px inset white;
+  }
+
+  #section-about h2 {
+    line-height: 1rem;
+    font-weight: 900;
+    padding: 14px;
+    text-decoration: underline;
+  }
+
+  #section-about p {
+    line-height: 30px;
+    word-spacing: 4px;
+    padding: 7px;
+    margin: 1px;
+  }
+
+  #section-qualification {
+    font-size: 30px;
+    font-style: italic;
+    padding: 0.6rem;
+    margin: 5px;
+    color: #ffffff;
+    margin: 8px;
+    border: 2px inset white;
+  }
+
+  #section-qualification h2 {
+    line-height: 1rem;
+    font-weight: 900;
+    padding: 14px;
+    text-decoration: underline;
+  }
+
+  #section-qualification p {
+    line-height: 30px;
+    word-spacing: 4px;
+    padding: 7px;
+    margin: 1px;
+    letter-spacing: 0.7px;
+  }
+
+  #section-whatweoffer {
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    margin: 12px;
+  }
+
+  #section-assessments {
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0.5rem;
+    color: #ffffff;
+    margin: 16px 8px 16px 8px;
+  }
+
+  #section-assessments img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-assessments h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  #section-assesments p {
+    line-height: 10px;
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+    letter-spacing: 0.7px;
+  }
+
+  #section-personal {
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0.5rem;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-personal img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-personal h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  #section-personal p {
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+    letter-spacing: 0.7px;
+  }
+
+  #section-nutrition {
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0.5rem;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-nutrition img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-nutrition h3 {
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 0.7px;
+  }
+
+  #section-nutrition p {
+    text-align: justify;
+    word-spacing: 0.3px;
+    padding: 2px;
+    letter-spacing: 0.7px;
+  }
+
+  #section-equipment {
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0.5rem;
+    color: #ffffff;
+    margin: 15px 8px 15px 8px;
+  }
+
+  #section-equipment img {
+    max-height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  #section-equipment h3 {
+    text-decoration: underline;
+    padding: px;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  #section-equipment p {
+    text-align: justify;
+    word-spacing: 0.7px;
+    padding: 2px;
+    letter-spacing: 0.7px;
+  }
+
+  footer {
+    font-size: 2.3rem;
+  }
 }
 
 /* Media query: Desktops and larger ( 1280 and up)*/
-@media screen and (min-width: 1440px) {
-    #hero-image {
-        height: 725px;
-        width: auto;
-    }
-    
-    #hero-section {
-        margin-top: 20rem;
-    }
-    #hero-section h1 {
-        font-weight: 900;
-        font-size: 4.4rem;
+@media screen and (min-width: 1280px) {
+  header {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
 
-    }
-    #hero-section h1 {
-        font-size: 3.1rem;
-    }
+  #hero-image {
+    height: 2710px;
+    width: auto;
+  }
+  
+  #hero-section {
+    margin-top: 100rem;
+  }
+  
+
+  #hero-section  p{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  #hero-section h1 {
+    font-size:  9rem;
+    font-weight: 900;
+    word-spacing: 2px;
+  }
+
 }
