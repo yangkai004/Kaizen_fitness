@@ -239,6 +239,36 @@ summary ~ p{
 }
 
 
+#contact-form {
+    position: relative;
+    bottom: 95px;
+    left: 10.4em;
+    width: fit-content;
+    height: 10px ;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input {
+    margin: 4px;
+}
+
+#contact-form button {
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+#contact-address {
+    padding: 10px;
+
+}
+
+#contact-address p {
+    font-size: 12px;
+}
+
+
 /* Footer */
 footer {
   background-color: black;
