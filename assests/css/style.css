@@ -65,7 +65,7 @@ header a {
 nav {
   position: absolute;
   box-shadow: 0 2px 2px #7c7878;
-  background-color: rgba (0, 0, 10, 0.9);
+  background-color: #000;
   width: 100%;
   left: 0;
   padding: 0 1rem;
@@ -235,7 +235,7 @@ summary {
 }
 
 summary ~ p{
-
+  padding: 4px;
 }
 
 
