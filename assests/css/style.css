@@ -24,7 +24,9 @@ body {
   /* Generic project styles */
   color: #ffffff;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
+
 
 /* Header */
 header {
@@ -37,6 +39,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex: 3px 0 auto;
+  min-width: 164px;
+  margin-bottom: 5px;
 }
 
 /* This styling is for removing the blue default anchor color and default underline text decoration */
@@ -85,13 +90,35 @@ nav {
   font-size: 2rem;
 }
 
-/* Main content */
 main {
+  width: 100%;
+  min-width: 150px; 
+  overflow: auto;
+  padding: 1rem; 
+  margin-top: 3.4rem;
+}
+
+/* Main content */
+#main-index {
   background-color: #454343;
   /* Added flex shorthand to take up any surplus space to push footer down */
   flex: 1 0 auto;
-  margin-top: 4.8rem;
 }
+
+/* Main content */
+#main-about {
+  background-color: #454343;
+  /* Added flex shorthand to take up any surplus space to push footer down */
+  flex: 1 0 auto;
+}
+
+/* Main content */
+#main-contact {
+  background-color: #454343;
+  /* Added flex shorthand to take up any surplus space to push footer down */
+  flex: 1 0 auto;
+}
+
 
 /*hero section*/
 #hero-image {
@@ -243,7 +270,7 @@ summary ~ p{
     position: relative;
     bottom: 95px;
     left: 10.4em;
-    width: fit-content;
+    width: 20px;
     height: 10px ;
     display: flex;
     flex-direction: column;
@@ -251,6 +278,7 @@ summary ~ p{
 
 #contact-form input {
     margin: 4px;
+    width: 20px;
 }
 
 #contact-form button {
@@ -268,6 +296,20 @@ summary ~ p{
     font-size: 12px;
 }
 
+/* Map */
+#map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+iframe  {
+    width: 85%;
+    height: 18rem ;
+    filter: invert(100%);
+
+} 
 
 /* Footer */
 footer {
@@ -277,7 +319,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 0 1rem;
+
 }
 
 #social-media {
@@ -303,6 +347,27 @@ footer {
 }
 
 
+@media screen and (max-width: 195px) {
+  footer {
+    min-width: 195px;
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+  }
+  main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 324px) {
+  main {
+    margin-top: 1.9rem;
+  }
+}
 
 /* Certain phones like the iphone  and largerx */
 @media screen and (min-width: 375px) {
@@ -367,9 +432,6 @@ footer {
     display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
   }
 
-  main {
-    margin-top: 53px;
-  }
 
   #hero-image {
     height: 900px;
@@ -515,13 +577,18 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  
+  main {
+    margin-top: 5rem;
+  }
+  
   header {
     margin-bottom: 20px;
     font-size: 1.6rem;
     padding: 7px;
   }
   
-    #hero-image {
+  #hero-image {
     height: 1330px;
     width: auto;
   }
@@ -633,13 +700,18 @@ footer {
 
 /* Media query: Desktops and larger ( 1440 and up)*/
 @media screen and (min-width: 1440px) {
+  
+  main {
+    margin-top: 6.8rem;
+  }
+  
   header {
     font-size: 2.2rem;
   }
 
   #hero-image {
-    height: 2725px;
-    width: auto;
+    height: 2170px;
+    width: 100%;
   }
   
   #hero-section {
