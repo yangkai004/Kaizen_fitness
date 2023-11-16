@@ -208,7 +208,7 @@ main {
 
 #section-whatweoffer {
   font-family: "Bungee Outline", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,32 +264,35 @@ summary {
 summary ~ p{
   padding: 4px;
 }
+#contact {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-
+#contact-address,
 #contact-form {
-    position: relative;
-    bottom: 95px;
-    left: 10.4em;
-    width: 20px;
-    height: 10px ;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
 }
 
 #contact-form input {
-    margin: 4px;
-    width: 20px;
+    width: 7rem;
+    margin-bottom: 2px;
+    padding: 2px;
 }
 
 #contact-form button {
-    justify-content: center;
-    align-items: center;
-    width: 80px;
+    width: 7rem;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #454343;
+    border-radius: 10px;
+    padding: 2px;
 }
 
-#contact-address {
-    padding: 10px;
-
+input::placeholder {
+  color: #000;
 }
 
 #contact-address p {
@@ -305,10 +308,9 @@ summary ~ p{
 }
 
 iframe  {
-    width: 85%;
-    height: 18rem ;
+    width: 100vw;
+    height: 40vh ;
     filter: invert(100%);
-
 } 
 
 /* Footer */
@@ -391,6 +393,16 @@ footer {
     font-size: 0.9em;
     font-weight: 700;
   }
+
+  #contact {
+    margin-top: -2vh;
+    padding: 15px;
+  }
+
+  #contact-form {
+    margin-right: -60px;
+  }
+
 }
 
 @media screen and (min-width: 425px) {
@@ -409,10 +421,44 @@ footer {
   #hero-section p {
     font-size: 1rem;
   }
+  #contact{
+  margin-top: -15px;
+ }
+  #contact-form {
+    margin-right: vw;
+  }
 }
 
 /* Media query: tablets and larger (768 and up)*/
 @media screen and (min-width: 768px) {
+
+  #contact-form {
+    margin-right: -3vw;
+  }
+
+  #contact-form input {
+  font-size: 0.9rem;
+  padding: 10px; 
+  width: 9rem;
+  text-align: center;
+  left: 40px;
+   margin-top: 10px;
+  }  
+
+  #contact-form button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+   
+  }
+
+  #contact-address h2 {
+    font-size: 3rem;
+  }
+
+  #contact-address p {
+    font-size: 1.3rem;
+  }
+
   nav {
     display: block;
     position: relative;
@@ -539,6 +585,10 @@ footer {
     word-spacing: 0.7px;
   }
 
+  iframe{
+    height: 60vh;
+  }
+
   footer {
     font-size: 1.9rem;
   }
@@ -549,7 +599,34 @@ footer {
   main {
     margin-top: 3.2rem;
   }
+  
+  #contact-form {
+    margin-right: -15vw;
+  }
 
+  #contact-form input {
+  font-size: 0.9rem;
+  padding: 10px; 
+  width: 9rem;
+  text-align: center;
+  left: 40px;
+   margin-top: 10px;
+  }  
+
+  #contact-form button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+   
+  }
+
+  #contact-address h2 {
+    font-size: 3rem;
+  }
+
+  #contact-address p {
+    font-size: 1.3rem;
+  }
+  
   #navmenu a:hover {
     border-bottom: 1px solid #a4969b;
   }
@@ -572,7 +649,7 @@ footer {
 
   summary:hover {
     border-bottom: 1px solid #000;
-}
+  } 
 
 }
 
@@ -588,6 +665,35 @@ footer {
     padding: 7px;
   }
   
+
+
+  #contact-form {
+    margin-left: 1vw;
+  }
+
+  #contact-form input {
+  font-size: 1.1rem;
+  padding: 10px; 
+  width: 9.2rem;
+  left: 40px;
+   margin-top: 10px;
+   margin-left: 1px;
+  }  
+
+  #contact-form button {
+    padding: 9px;
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  #contact-address h2 {
+    font-size: 3rem;
+  }
+
+  #contact-address p {
+    font-size: 1.3rem;
+  }
+
   #hero-image {
     height: 1330px;
     width: auto;
@@ -705,6 +811,31 @@ footer {
     margin-top: 6.8rem;
   }
   
+  #contact-form {
+    margin-right: -30vw;
+  }
+
+  #contact-form input {
+  font-size: 1rem;
+  width: 10rem;
+  left: 40px;
+   margin-right:10px;
+  }  
+
+  #contact-form button {
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-left: 1px
+  }
+
+  #contact-address h2 {
+    font-size: 3.2rem;
+  }
+
+  #contact-address p {
+    font-size: 1.5rem;
+  }
+
   header {
     font-size: 2.2rem;
   }
