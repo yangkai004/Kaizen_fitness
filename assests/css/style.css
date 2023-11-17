@@ -27,7 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Header */
 header {
   background-color: black;
@@ -41,7 +40,6 @@ header {
   align-items: baseline;
   flex: 3px 0 auto;
   min-width: 164px;
-  margin-bottom: 5px;
 }
 
 /* This styling is for removing the blue default anchor color and default underline text decoration */
@@ -92,9 +90,9 @@ nav {
 
 main {
   width: 100%;
-  min-width: 150px; 
+  min-width: 150px;
   overflow: auto;
-  padding: 1rem; 
+  padding: 1rem;
   margin-top: 3.4rem;
 }
 
@@ -103,6 +101,7 @@ main {
   background-color: #454343;
   /* Added flex shorthand to take up any surplus space to push footer down */
   flex: 1 0 auto;
+  padding: 0;
 }
 
 /* Main content */
@@ -119,11 +118,10 @@ main {
   flex: 1 0 auto;
 }
 
-
 /*hero section*/
 #hero-image {
   width: auto;
-  height: 600px;
+  height: 640px;
   overflow: scroll;
   background: url("/Users/abdiqaniwarsame/Documents/GitHub/Kaizen_fitness/assests/images/hero image main.jpg")
     no-repeat center center / cover;
@@ -156,20 +154,16 @@ main {
   font-size: 0.7em;
 }
 
-#section-grey {
-  border: 1px inset #454343;
-}
-
 #section-about {
   font-size: 8px;
   font-style: italic;
   letter-spacing: 1px;
   padding: 0.4rem;
-  margin: 5px;
-  color: #ffffff;
-  margin: 2px;
+  margin: 10px;
   border: 1px inset white;
   border-radius: 20px;
+  box-shadow: 0 -5px 20px rgb(197, 193, 193);
+  text-align: center;
 }
 
 #section-about h2 {
@@ -183,16 +177,37 @@ main {
   line-height: 10px;
 }
 
+#section-grey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#section-grey button {
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(188, 183, 183, 0.7);
+  padding: 2px 20px ;
+  margin: 20px 100px 20px 100px;
+  text-align: justify;
+}
+
+#section-grey a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #section-qualification {
   font-size: 8px;
   font-style: italic;
   letter-spacing: 1px;
   padding: 0.4rem;
-  margin: 5px;
-  color: #ffffff;
-  margin: 2px;
+  margin: 10px;
   border: 1px outset whitesmoke;
   border-radius: 20px;
+  box-shadow: -5px 0px 10px #a4969b;
+
 }
 
 #section-qualification h2 {
@@ -200,6 +215,7 @@ main {
   font-weight: 800;
   padding: 2px;
   text-decoration: underline;
+  text-align: center;
 }
 
 #section-qualification p {
@@ -252,18 +268,51 @@ main {
 }
 
 #faqs {
-    border: 1.6px solid #fff;
-    border-radius: 10px;
-    padding:  0 1rem;
-    margin: 10px;
-}
-summary {
-    margin: 8px;
+  border: 1.6px solid #fff;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  margin: 10px;
+  box-shadow: 5px 0px 20px #a4969b;
+  box-shadow: 0 5px 20px #a4969b;
+  box-shadow: -5px 0px 20px #a4969b;
+  box-shadow: 0 -5px 20px rgb(197, 193, 193);
 }
 
-summary ~ p{
+#faqs-control {
+  padding: 5px 0;
+}
+
+summary {
+  margin: 8px;
+}
+
+summary ~ p {
   padding: 4px;
 }
+
+#contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#contact-button button {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(188, 183, 183, 0.7);
+  padding: 5px 25px;
+  margin: 15px 100px 15px 100px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+#contact-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 #contact {
   margin-top: 2vh;
   display: flex;
@@ -277,18 +326,17 @@ summary ~ p{
 }
 
 #contact-form input {
-    width: 7rem;
-    margin-bottom: 2px;
-    padding: 2px;
+  width: 7rem;
+  margin-bottom: 2px;
+  padding: 2px;
 }
 
 #contact-form button {
-    width: 7rem;
-    margin-top: 5px;
-    text-align: center;
-    background-color: #454343;
-    border-radius: 10px;
-    padding: 2px;
+  width: 7rem;
+  margin-top: 5px;
+  text-align: center;
+  background-color: #454343;
+  border-radius: 10px;
 }
 
 input::placeholder {
@@ -296,7 +344,7 @@ input::placeholder {
 }
 
 #contact-address p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 /* Map */
@@ -307,23 +355,21 @@ input::placeholder {
   padding: 20px;
 }
 
-iframe  {
-    width: 100vw;
-    height: 40vh ;
-    filter: invert(100%);
-} 
+iframe {
+  width: 100vw;
+  height: 40vh;
+  filter: invert(100%);
+}
 
 /* Footer */
 footer {
   background-color: black;
-  margin-top: auto;
-  bottom: 0;
+  bottom: 100;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 1rem;
-
 }
 
 #social-media {
@@ -348,12 +394,11 @@ footer {
   text-decoration: underline;
 }
 
-
 @media screen and (max-width: 195px) {
   footer {
     min-width: 195px;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     width: 100vw;
   }
   main {
@@ -362,7 +407,6 @@ footer {
     bottom: 0;
     width: 100%;
   }
-  
 }
 
 @media screen and (min-width: 324px) {
@@ -377,7 +421,7 @@ footer {
     margin-top: 2.4rem;
   }
   #hero-image {
-    height: 639px;
+    height: 660px;
     width: auto;
   }
   #hero-section {
@@ -403,11 +447,22 @@ footer {
     margin-right: -60px;
   }
 
+  #section-grey button { 
+    padding: 5px 25px;
+  }
+
+  #contact-button button {
+    font-size: 18px;
+
+  }
+
 }
 
 @media screen and (min-width: 425px) {
+  
+  
   #hero-image {
-    height: 639px;
+    height: 690px;
     width: auto;
   }
 
@@ -421,34 +476,78 @@ footer {
   #hero-section p {
     font-size: 1rem;
   }
-  #contact{
-  margin-top: -15px;
- }
+
+  #section-grey {
+    margin: 15px;
+  }
+
+  #section-grey h2 {
+    font-size: 1rem;
+    padding-bottom: 3px;
+  }
+
+  #section-grey p {
+    font-size: 0.6rem;
+    line-height: 12px;
+  }
+
+  #section-about {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #section-qualification {
+    padding: 10px;
+  }
+
+  #section-grey button {
+    padding: 10px 25px;
+  }
+
+  #contact {
+    margin-top: 20px;
+  }
   #contact-form {
-    margin-right: vw;
+    margin-right: 2.2vw;
+  }
+
+  #contact-form input {
+    font-size: 12px;
+    padding-right: -30px;
+  }
+
+  #contact-form button {
+    font-size: 12px;
+  }
+  
+  #contact-button button {
+    font-size: 20px;
   }
 }
 
 /* Media query: tablets and larger (768 and up)*/
 @media screen and (min-width: 768px) {
-
+  
+  header {
+    font-size: 1.3rem;
+  }
+  
   #contact-form {
     margin-right: -3vw;
   }
 
   #contact-form input {
-  font-size: 0.9rem;
-  padding: 10px; 
-  width: 9rem;
-  text-align: center;
-  left: 40px;
-   margin-top: 10px;
-  }  
+    font-size: 12px;
+    padding: 6px;
+    width: 9rem;
+    text-align: center;
+    left: 40px;
+    margin-top: 10px;
+  }
 
   #contact-form button {
-    padding: 0.8rem;
-    font-size: 0.9rem;
-   
+    padding: 6px;
+    font-size: 12px;
   }
 
   #contact-address h2 {
@@ -478,13 +577,12 @@ footer {
     display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
   }
 
-
   #hero-image {
-    height: 900px;
+    height: 1050px;
   }
 
   #hero-section {
-    margin-top: 30rem;
+    margin-top: 35rem;
   }
 
   #hero-section h1 {
@@ -496,64 +594,32 @@ footer {
     letter-spacing: 2px;
   }
 
-  #section-about {
-    font-size: 23px;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding: 0.6rem;
-    margin: 5px;
-    color: #ffffff;
-    margin: 5px;
-    border: 2px inset white;
-  }
-
-  #section-about h2 {
-    line-height: 1rem;
+  #section-grey h2 {
     font-weight: 900;
-    padding: 12px;
-    text-decoration: underline;
-  }
-
-  #section-about p {
-    line-height: 25px;
-    word-spacing: 4px;
-    padding: 5px;
-    margin: 1px;
-  }
-
-  #section-qualification {
-    font-size: 23px;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding: 0.6rem;
-    margin: 5px;
-    color: #ffffff;
-    margin: 5px;
-    border: 2px inset white;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
   }
 
   #section-qualification h2 {
-    line-height: 1rem;
     font-weight: 900;
-    padding: 12px;
-    text-decoration: underline;
+    padding-bottom: 15px;
+    font-size: 1.6rem;
   }
 
-  #section-qualification p {
-    line-height: 25px;
-    word-spacing: 4px;
-    padding: 5px;
-    margin: 1px;
+  #section-grey p {
+    line-height: 20px;
+    font-size: 1rem;
+    word-spacing: 2px;
+  }
+
+  #section-grey button {
+    font-size: 20px;
+    padding: 10px 25px;
   }
 
   #section-whatweoffer {
-    font-family: "Bungee Outline", sans-serif;
     font-size: 2.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     letter-spacing: 0.5px;
-    margin: 12px;
   }
 
   #section-offer {
@@ -577,15 +643,47 @@ footer {
     text-decoration: underline;
     padding: 5px;
     font-weight: 900;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
+    text-align: justify;
   }
 
   #section-offer p {
     text-align: justify;
-    word-spacing: 0.7px;
+    padding: 10px;
   }
 
-  iframe{
+  #msection-offer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+    gap: 20px; /* Gap between cards */
+    margin-top: 15px;
+  }
+
+  #section-grey {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+    gap: 10px; /* Gap between cards */
+  }
+
+  #faqs-control {
+    margin: 2rem 0;
+  }
+
+  #faqs {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  summary ~ p {
+    padding-top: 25px;
+  }
+
+  #contact-button button {
+    font-size: 35px;
+    margin: 35px;
+  }
+
+  iframe {
     height: 60vh;
   }
 
@@ -596,27 +694,30 @@ footer {
 
 /* Media query: laptops and larger (992 and up)*/
 @media screen and (min-width: 992px) {
+  header {
+    font-size: 2rem;
+  }
+  
   main {
     margin-top: 3.2rem;
   }
-  
+
   #contact-form {
     margin-right: -15vw;
   }
 
   #contact-form input {
-  font-size: 0.9rem;
-  padding: 10px; 
-  width: 9rem;
-  text-align: center;
-  left: 40px;
-   margin-top: 10px;
-  }  
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 9rem;
+    text-align: center;
+    left: 40px;
+    margin-top: 10px;
+  }
 
   #contact-form button {
     padding: 0.8rem;
     font-size: 0.9rem;
-   
   }
 
   #contact-address h2 {
@@ -626,17 +727,17 @@ footer {
   #contact-address p {
     font-size: 1.3rem;
   }
-  
+
   #navmenu a:hover {
     border-bottom: 1px solid #a4969b;
   }
   #hero-image {
-    height: 622px;
+    height: 1100px;
     width: auto;
   }
 
   #hero-section {
-    margin-top: 18rem;
+    margin-top: 35rem;
   }
 
   #hero-section h1 {
@@ -649,39 +750,35 @@ footer {
 
   summary:hover {
     border-bottom: 1px solid #000;
-  } 
-
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  
   main {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
-  
+
   header {
     margin-bottom: 20px;
     font-size: 1.6rem;
     padding: 7px;
   }
-  
-
 
   #contact-form {
-    margin-left: 1vw;
+    margin-left: -1vw;
   }
 
   #contact-form input {
-  font-size: 1.1rem;
-  padding: 10px; 
-  width: 9.2rem;
-  left: 40px;
-   margin-top: 10px;
-   margin-left: 1px;
-  }  
+    font-size: 1.1rem;
+    padding: 6px;
+    width: 9.5rem;
+    left: 40px;
+    margin-top: 10px;
+    margin-left: 1px;
+  }
 
   #contact-form button {
-    padding: 9px;
+    padding: 6px;
     font-size: 17px;
     margin-left: 5px;
   }
@@ -695,12 +792,12 @@ footer {
   }
 
   #hero-image {
-    height: 1330px;
+    height: 1000px;
     width: auto;
   }
 
   #hero-section {
-    margin-top: 48rem;
+    margin-top: 35rem;
   }
   #hero-section h1 {
     font-weight: 900;
@@ -710,55 +807,27 @@ footer {
     font-size: 2rem;
   }
 
-
-  #section-about {
-    font-size: 30px;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding: 0.6rem;
-    margin: 5px;
-    color: #ffffff;
-    margin: 8px;
-    border: 2px inset white;
-  }
-
-  #section-about h2 {
-    line-height: 1rem;
+  #section-grey h2 {
     font-weight: 900;
-    padding: 14px;
-    text-decoration: underline;
-  }
-
-  #section-about p {
-    line-height: 30px;
-    word-spacing: 4px;
-    padding: 7px;
-    margin: 1px;
-  }
-
-  #section-qualification {
-    font-size: 30px;
-    font-style: italic;
-    padding: 0.6rem;
-    margin: 5px;
-    color: #ffffff;
-    margin: 8px;
-    border: 2px inset white;
+    font-size: 2rem;
+    padding-bottom: 20px;
   }
 
   #section-qualification h2 {
-    line-height: 1rem;
     font-weight: 900;
-    padding: 14px;
-    text-decoration: underline;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
   }
 
-  #section-qualification p {
-    line-height: 30px;
-    word-spacing: 4px;
-    padding: 7px;
-    margin: 1px;
-    letter-spacing: 0.7px;
+  #section-grey p {
+    line-height: 25px;
+    font-size: 1.2rem;
+    word-spacing: 1px;
+  }
+
+  #section-grey button {
+    font-size: 25px;
+    padding: 10px 25px;
   }
 
   #section-whatweoffer {
@@ -795,8 +864,13 @@ footer {
 
   #section-offer p {
     text-align: justify;
-    word-spacing: 0.7px;
+    word-spacing: 0.5px;
     letter-spacing: 0.7px;
+  }
+
+  #contact-button button {
+    font-size: 40px;
+    margin: 75px;
   }
 
   footer {
@@ -806,30 +880,35 @@ footer {
 
 /* Media query: Desktops and larger ( 1440 and up)*/
 @media screen and (min-width: 1440px) {
-  
   main {
-    margin-top: 6.8rem;
+    margin-top: 7.5rem;
   }
-  
+
+  #contact {
+    margin-top: -5px;
+    margin-bottom: 25px;
+  }
+
   #contact-form {
-    margin-right: -30vw;
+    margin-right: -25vw;
   }
 
   #contact-form input {
-  font-size: 1rem;
-  width: 10rem;
-  left: 40px;
-   margin-right:10px;
-  }  
+    font-size: 1.2rem;
+    width: 10rem;
+    left: 40px;
+    margin-right: 10px;
+    padding-left: 1px;
+  }
 
   #contact-form button {
-    padding: 8px;
-    font-size: 1.1rem;
-    margin-left: 1px
+    padding: 1px;
+    font-size: 1.3rem;
+    margin-left: 5px;
   }
 
   #contact-address h2 {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
 
   #contact-address p {
@@ -841,26 +920,43 @@ footer {
   }
 
   #hero-image {
-    height: 2170px;
+    height: 1600px;
     width: 100%;
   }
-  
-  #hero-section {
-    margin-top: 90rem;
-  }
-  
 
-  #hero-section  p{
+  #hero-section {
+    margin-top: 60rem;
+  }
+
+  #hero-section p {
     font-size: 2rem;
     font-weight: 600;
     text-align: justify;
   }
 
   #hero-section h1 {
-    font-size:  7rem;
+    font-size: 7rem;
     font-weight: 900;
     word-spacing: 2px;
   }
-  
-  
+
+  #section-grey h2 {
+    font-size: 4rem;
+    line-height: 50px;
+    padding-bottom: 25px;
+  }
+
+  #section-grey p{
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+ #section-qualification h2{
+    font-size: 3.5rem;
+  }
+  #section-grey button {
+    font-size: 50px;
+    padding: 10px 25px;
+    margin: 250px 100px;
+  }
 }
