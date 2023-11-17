@@ -272,10 +272,10 @@ main {
   border-radius: 10px;
   padding: 0 0.5rem;
   margin: 10px;
-  box-shadow: 5px 0px 20px #a4969b;
-  box-shadow: 0 5px 20px #a4969b;
-  box-shadow: -5px 0px 20px #a4969b;
-  box-shadow: 0 -5px 20px rgb(197, 193, 193);
+  box-shadow: 5px 0px 5px #2e2d2d;
+  box-shadow: 0 5px 5px  #2e2d2d;
+  box-shadow: -5px 0px 5px  #2e2d2d;
+  box-shadow: 0 -5px 5px  #2e2d2d;
 }
 
 #faqs-control {
@@ -331,6 +331,23 @@ summary ~ p {
   padding: 2px;
 }
 
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0 10px rgba(104, 102, 102, 0.3);
+  box-shadow: 0px 5px 19px rgba(123, 117, 117, 0.1);;
+  box-shadow: 0px -5px 18px rgba(123, 117, 117, 0.3);
+  box-shadow: -5px 0px 17px rgba(35, 117, 117, 0.3);
+}
+
+
+#video video {
+  width: 100%; 
+  height: auto;
+  margin: 20px 0;
+}
+
 #contact-form button {
   width: 7rem;
   margin-top: 5px;
@@ -367,10 +384,15 @@ footer {
   bottom: 100;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 1rem;
 }
+
+#thefooter {
+  
+}
+
 
 #social-media {
   list-style-type: none;
@@ -384,10 +406,6 @@ footer {
 
 .sui {
   text-decoration: underline;
-}
-
-#ul2 {
-  list-style-type: none;
 }
 
 .suii {
@@ -453,7 +471,6 @@ footer {
 
   #contact-button button {
     font-size: 18px;
-
   }
 
 }
@@ -658,7 +675,7 @@ footer {
     gap: 20px; /* Gap between cards */
     margin-top: 15px;
   }
-
+  
   #section-grey {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns by default */
@@ -686,6 +703,7 @@ footer {
   iframe {
     height: 60vh;
   }
+
 
   footer {
     font-size: 1.9rem;
@@ -868,6 +886,10 @@ footer {
     letter-spacing: 0.7px;
   }
 
+  #video {
+    margin: 25px 5px;
+  }
+
   #contact-button button {
     font-size: 40px;
     margin: 75px;
@@ -954,9 +976,15 @@ footer {
  #section-qualification h2{
     font-size: 3.5rem;
   }
+
   #section-grey button {
     font-size: 50px;
     padding: 10px 25px;
     margin: 250px 100px;
   }
+
+  #video {
+    margin: 30px 10px;
+  }
 }
+
