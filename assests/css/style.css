@@ -753,6 +753,11 @@ footer {
     font-size: 1.3rem;
   }
 
+  #section-about:hover {
+    transform: scale(1.05);
+    box-shadow: 0 -5px 20px 10px rgb(197, 193, 193);
+  }
+
   #navmenu a:hover {
     border: 2px groove #7c7878;
     border-radius: 15px;
@@ -814,6 +819,7 @@ footer {
     box-shadow: 10px 5px 20px 15px #7c7878 ;
     background-color: #7c7878;
     color: #fff;
+    transform: scale(1.02);
   }
 
   #contact-form button:hover {
