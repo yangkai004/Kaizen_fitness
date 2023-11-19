@@ -762,9 +762,12 @@ footer {
   }
 
   #navmenu a:hover {
-    border-bottom: 2px solid #ffffff;
-    padding-top: 10px;
-    color: #7c7878;
+    border: 4px outset #7c7878;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #7c7878;
+    color: #fff;
+    box-shadow: 10px 8px 20px #7c7878;
   }
 
   #hero-image {
