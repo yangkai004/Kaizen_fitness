@@ -154,6 +154,7 @@ main {
   font-size: 0.7em;
 }
 
+/* Card formats used after the hero section in the home page */
 #section-about {
   font-size: 8px;
   font-style: italic;
@@ -208,6 +209,7 @@ main {
   margin: 12px;
 }
 
+/* Card formats used in the about page */
 #section-offer {
   border: 2px solid;
   border-radius: 10px;
@@ -249,10 +251,12 @@ main {
   padding: 2px;
 }
 
+/* Line used inbetween the footer and main element to separate them */
 .hrstyle {
   border: 1px inset #7c7878;
 }
 
+/* FAQs ( Frequently Asked Questions) */
 #faqs {
   border: 1.6px solid #fff;
   border-radius: 10px;
@@ -316,7 +320,7 @@ summary ~ p {
   margin-bottom: 2px;
   padding: 2px;
 }
-
+/* Video */
 #video {
   display: flex;
   justify-content: center;
@@ -423,7 +427,7 @@ footer {
   }
 }
 
-/* Certain phones like the iphone  and largerx */
+/* Certain phones like the iphone  and larger (375 and up) */
 @media screen and (min-width: 375px) {
   main {
     margin-top: 2.4rem;
@@ -455,8 +459,13 @@ footer {
     margin-right: -60px;
   }
 
+  #section-grey {
+    margin:5px;
+  }
+
   #section-grey button { 
     padding: 5px 25px;
+    text-align: center;
   }
 
   #contact-button button {
@@ -469,7 +478,7 @@ footer {
   }
 
 }
-
+/* This a breakpiont for larger phones (425 and up) */
 @media screen and (min-width: 425px) {
   
   #hero-image {
@@ -489,7 +498,7 @@ footer {
   }
 
   #section-grey {
-    margin: 15px;
+    margin: 20px;
   }
 
   #section-grey h2 {
@@ -581,7 +590,8 @@ footer {
   #contact-address p {
     font-size: 1.3rem;
   }
-
+  
+  
   nav {
     display: block;
     position: relative;
@@ -672,8 +682,8 @@ footer {
 
   #msection-offer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
-    gap: 20px; /* Gap between cards */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; /* Gap between card formats */
     margin-top: 15px;
   }
   
@@ -779,7 +789,7 @@ footer {
   }
 
   #section-offer img:hover {
-
+    transform: scale(1.04);
   }
 
   summary:hover {
@@ -801,6 +811,9 @@ footer {
     color: white;
   }
 
+  #social-media i:hover{
+    color: #7c7878;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -957,7 +970,6 @@ footer {
 
   #contact-form button {
     font-size: 1.3rem;
-  
     width: auto;
   }
 
@@ -1020,6 +1032,4 @@ footer {
     padding: 25px 150px ;
     font-size: 30px;
   }
-
 }
-
