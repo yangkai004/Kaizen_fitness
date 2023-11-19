@@ -262,10 +262,6 @@ main {
   border-radius: 10px;
   padding: 0 0.5rem;
   margin: 10px;
-  box-shadow: 5px 0px 5px #2e2d2d;
-  box-shadow: 0 5px 5px  #2e2d2d;
-  box-shadow: -5px 0px 5px  #2e2d2d;
-  box-shadow: 0 -5px 5px  #2e2d2d;
 }
 
 #faqs-control {
@@ -325,17 +321,14 @@ summary ~ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 0 10px rgba(104, 102, 102, 0.3);
-  box-shadow: 0px 5px 19px rgba(123, 117, 117, 0.1);;
-  box-shadow: 0px -5px 18px rgba(123, 117, 117, 0.3);
-  box-shadow: -5px 0px 17px rgba(35, 117, 117, 0.3);
 }
 
 
 #video video {
-  width: 100%; 
+  width: 90%; 
   height: auto;
   margin: 20px 0;
+  box-shadow: 1px 1px 50px #7c7878;
 }
 
 #contact-form button {
@@ -344,6 +337,10 @@ summary ~ p {
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
+}
+
+#video video:hover {
+  box-shadow: 150px 150px 200px #2e2d2d;
 }
 
 input::placeholder {
@@ -762,12 +759,12 @@ footer {
   }
 
   #navmenu a:hover {
-    border: 4px outset #7c7878;
+    border: 2px groove #7c7878;
     border-radius: 15px;
-    padding: 5px;
+    padding: 4px;
     background-color: #7c7878;
     color: #fff;
-    box-shadow: 10px 8px 20px #7c7878;
+    box-shadow: 5px 5px 5px 1px #fff;
   }
 
   #hero-image {
@@ -780,7 +777,7 @@ footer {
   }
 
   #heading:hover {
-    box-shadow: 2px 2px 15px 5px #7c7878;
+    box-shadow: 5px 5px 25px #7c7878;
   }
 
   #hero-section h1 {
@@ -795,27 +792,50 @@ footer {
     transform: scale(1.04);
   }
 
-  summary:hover {
-    border-bottom: 1px solid #000;
-  }
-
   #section-grey button:hover {
     background-color: #7c7878;
     color: white;
+    box-shadow: 10px 10px 20px #7c7878;
+  }
+
+  #contact-form input:hover {
+    background-color: #7c7878;
+    color: white;
+    box-shadow: 5px 5px 20px #7c7878;
+  }
+
+  /* hover state */
+  input:hover::placeholder {
+    color: #fff; /* Change placeholder color on input focus */
+  }
+  
+
+  #faqs:hover {
+    box-shadow: 10px 5px 20px 15px #7c7878 ;
+    background-color: #7c7878;
+    color: #fff;
   }
 
   #contact-form button:hover {
     background-color: #7c7878;
     color: white;
+    box-shadow: 5px 5px 20px #7c7878;
   }
 
   #contact-button button:hover {
     background-color: #7c7878;
     color: white;
+    box-shadow: 5px 5px 20px #7c7878;
+  }
+
+  #map:hover {
+    box-shadow: 10px 10px 50px #fff;
   }
 
   #social-media i:hover{
-    color: #7c7878;
+    color: #fff;
+    box-shadow: 1px 1px 25px #7c7878;
+    border-radius: 25px;
   }
 }
 
