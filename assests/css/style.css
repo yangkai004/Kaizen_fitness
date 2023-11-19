@@ -361,7 +361,7 @@ input::placeholder {
 
 iframe {
   width: 100vw;
-  height: 40vh;
+  height: 60vh;
   filter: invert(100%);
 }
 
@@ -588,7 +588,6 @@ footer {
     font-size: 1.3rem;
   }
   
-  
   nav {
     display: block;
     position: relative;
@@ -708,10 +707,6 @@ footer {
     margin: 35px;
   }
 
-  iframe {
-    height: 60vh;
-  }
-
   footer {
     font-size: 1.9rem;
   }
@@ -767,6 +762,11 @@ footer {
     box-shadow: 5px 5px 5px 1px #fff;
   }
 
+  #section-offer:hover {
+    box-shadow: 0 -5px 20px 10px rgb(197, 193, 193);
+    transform: scale(1.02);
+  }
+
   #hero-image {
     height: 1100px;
     width: auto;
@@ -789,7 +789,7 @@ footer {
   }
 
   #section-offer img:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
   }
 
   #section-grey button:hover {
@@ -1049,6 +1049,10 @@ footer {
 
   #video {
     margin: 30px 10px;
+  }
+
+  #map {
+    margin-top: -30px;
   }
 
   #social-media i{
