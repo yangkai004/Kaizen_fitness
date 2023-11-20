@@ -64,17 +64,15 @@ On this page, submit inquiries via a user-friendly form on the right, while the 
 
 I conducted performance testing using Lighthouse to evaluate various aspects of the website, including SEO, accessibility, and overall performance. Below are the results for each page:
 
-- Home Page
+## Home Page
 ![Lighthouse Test - Home Page](assests/performace-screenshot/home.png)
 
-***
 
-- About Page
+## About Page
 ![Lighthouse Test - About Page](assests/performace-screenshot/about.png)
 
-***
 
-- Contact Page
+## Contact Page
 ![Lighthouse Test - Contact Page](assests/performace-screenshot/contact.png)
 
 
