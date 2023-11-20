@@ -65,9 +65,19 @@
           <p>BOURNEMOUTH</p>
           <p>BH1 1AA</p></section>
         <section id="contact-form">
-          <form><input type="email" id="form-email" name="form" placeholder="Type in email" required>
-          <input type="password" id="form-password" name="form" placeholder="Type in password" required>
-          <button>submit form</button><form></section>
+          <form><input type="text" id="form-name" name="form" placeholder="Type in name" required> <br>
+          <input type="email" id="form-email" name="form" placeholder="Type in email" required><br>
+          <select id="form-lisst" name="form">
+            <option value="" disabled selected> Select an Inquiry</option>
+            <option value="other">Other</option>
+            <option value="membership">Membership Inquiry</option>
+            <option value="classes">Classes Information</option>
+            <option value="equipment">Equipment Details</option>
+            <option value="schedule">Training Schedule</option>
+            <option value="pricing">Pricing Questions</option>
+          </select><br>
+        <textarea cols="15" id="form-textarea" rows="5" name="form" placeholder="Please provide details of your inquiry"></textarea><br>
+        <button>submit form</button><form></section><br>
       </div>
       <!--Map-->
       <div><section id="map-wrapper">
@@ -86,7 +96,7 @@
       <div id="thefooter">
             <ul id="social-media">
               <li id="ankara">
-                  <a href="mailto:kaizenfitness@kz.ac.uk"  target="_blank" rel="noopener" aria-label="Contant us on email( opens on email)"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="mail.to:kaizenfitness@kz.ac.uk"  target="_blank" rel="noopener" aria-label="Contant us on email( opens on email)"><i class="fa-solid fa-envelope"></i></a>
               </li>
               <li id="ankara">
                   <a href="tel:+4407756311939" target="_blank" rel="noopener" aria-label="CAll US"><i class="fa-solid fa-phone"></i></a>
