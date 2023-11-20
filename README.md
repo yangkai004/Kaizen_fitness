@@ -67,10 +67,12 @@ I conducted performance testing using Lighthouse to evaluate various aspects of 
 - Home Page
 ![Lighthouse Test - Home Page](assests/performace-screenshot/home.png)
 
+***
 
 - About Page
 ![Lighthouse Test - About Page](assests/performace-screenshot/about.png)
 
+***
 
 - Contact Page
 ![Lighthouse Test - Contact Page](assests/performace-screenshot/contact.png)
@@ -91,7 +93,7 @@ I conducted performance testing using Lighthouse to evaluate various aspects of 
 
 - I learned to implement a dark mode for maps within iframes from a tutorial on [YouTube](https://www.youtube.com/watch?v=lIlHLFM03qs), enhancing the visual appeal of location details.
 
-- I got a bit of an idea of making the this website when it comes to the button that links to different pages and the card formats that change to column or row format depending on the screensize of the device from[SubaxTech website](https://yasirwiifto.github.io/SubaxTech/)
+- I got a bit of an idea of making the this website when it comes to the button that links to different pages and the card formats that change to column or row format depending on the screensize of the device from [SubaxTech website](https://yasirwiifto.github.io/SubaxTech/)
 
 ---
 
