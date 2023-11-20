@@ -23,18 +23,18 @@ The word 'Kaizen originating from Japanese philosophy, embodies the concept of c
 
 This wireframe represents the foundational design of the Kaizen Fitness website. It's an initial visual blueprint I've created to plan and structure the website's layout and elements.
 
-![wireframe design image](assets/wireframe/wireframe-proj-1-kaizen-fitness-final-design.jpg)
+![wireframe design](assests/wireframe/wireframe.jpg)
 
 ---
 
 
 ## Navbar
 
-![Navbar at mobile screen size](assests/Screenshots/navbar at mobile sized screen.jpg)
+![Navbar at mobile screen size](assests/Screenshots/Navbar-mobile-size.jpg)
 
 This image shows the responsive navbar designed for mobile screens. It features a toggle burger icon that expands to reveal navigation options, ensuring easy access and smooth navigation on smaller devices.
 
-![Navbar at tablet size and larger](assests/Screenshots/navbar at wide screen.jpg)
+![Navbar at tablet size and larger](assests/Screenshots/Navbar-tablet-size-and-larger.jpg)
 
 Here's the navbar at tablet size and larger screens. This design doesnt have a burger icon you can see the navitems inrow to choose from it has a clean layout, offering a user-friendly navigation experience across tablets and wider screen sizes.
 
@@ -58,13 +58,13 @@ On this page, submit inquiries via a user-friendly form on the right, while the 
 I conducted performance testing using Lighthouse to evaluate various aspects of the website, including SEO, accessibility, and overall performance. Below are the results for each page:
 
 ### Home Page
-![Lighthouse Test - Home Page](assests/performace screenshot)
+![Lighthouse Test - Home Page](assests/performace-screenshot/home.png)
 
 ### About Page
-![Lighthouse Test - About Page](assests/performace screenshot/IMG_4392.png)
+![Lighthouse Test - About Page](assests/performace-screenshot/about.png)
 
 ### Contact Page
-![Lighthouse Test - Contact Page](assests/performace screenshot/IMG_6646.png)
+![Lighthouse Test - Contact Page](assests/performace-screenshot/contact.png)
 
 ---
 
