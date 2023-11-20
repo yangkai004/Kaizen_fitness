@@ -11,7 +11,7 @@ Join me on this educational journey through Kaizen Fitness, where simplicity mee
 ***
 
 ## Target audience
-Kaizen Fitness is crafted for gym-goers and fitness enthusiasts seeking an interactive online space. It's tailored to individuals passionate about fitness, aiming to enhance their workout experiences and explore a digital platform dedicated to health and wellness.
+Kaizen Fitness is crafted for gym-goers and fitness enthusiasts seeking an interactive online space. It's tailored to individuals passionate about fitness and improving themselves, aiming to enhance their workout experiences and explore a digital platform dedicated to health and wellness.
 
 ---
 
@@ -48,13 +48,13 @@ Here's the navbar at tablet size and larger screens. This design doesnt have a b
 ## Website Structure Overview
 
 ### Home Page
-The home page features a responsive navbar at the top, followed by a captivating hero section. Beneath it, discover the fitness gym's mission in card format, offering further exploration through a linked 'About' page. Completing the page is a footer with social media links and contact details.
+The home page features a responsive navbar at the top, followed by a captivating hero section. Beneath it, discover the fitness gym's mission in card format, offering further exploration through a linked 'About' page. Completing the page is a footer with social media links and contact details represented with icons.
 
 ### About Page
-Navigate through 'What We Offer' in four informative card formats detailing various gym amenities. Dive deeper into the gym's ambiance through an embedded video, followed by FAQs. At the bottom, find a 'Contact Us' button that directs to the contact page. and a footer at the bottom
+Navigate through 'What We Offer' in four informative card formats detailing various gym amenities. Dive deeper into the gym's ambiance through an embedded video, followed by FAQs. At the bottom, find a 'Contact Us' button that directs to the contact page. and a footer at the bottom with with social media links and contact details represented with icons.
 
 ### Contact Page
-On this page, submit inquiries via a user-friendly form on the right, while the left showcases the gym's address. Further down, explore the location through an integrated map and find contact details in the footer, maintaining consistency across pages.
+On this page, submit inquiries via a user-friendly form on the right, while the left showcases the gym's address. Further down, explore the location through an integrated map and find contact details and our social in the footer, maintaining consistency across pages represented with icons.
 
 
 ---
@@ -91,7 +91,7 @@ I conducted performance testing using Lighthouse to evaluate various aspects of 
 
 - I learned to implement a dark mode for maps within iframes from a tutorial on [YouTube](https://www.youtube.com/watch?v=lIlHLFM03qs), enhancing the visual appeal of location details.
 
-- I got a bit of an idea of making the this website when it comes to the button that links to different pages and the card formats that change to column or row format depending on the screensize of the device from [SubaxTech website](https://yasirwiifto.github.io/SubaxTech/)
+- I got a bit of an idea of making this website when it comes to the button that links to different pages and the card formats that change to column or row format depending on the screensize of the device from [SubaxTech website](https://yasirwiifto.github.io/SubaxTech/)
 
 ---
 
