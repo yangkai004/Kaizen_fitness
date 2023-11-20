@@ -23,7 +23,7 @@ The word 'Kaizen originating from Japanese philosophy, embodies the concept of c
 
 This wireframe represents the foundational design of the Kaizen Fitness website. It's an initial visual blueprint I've created to plan and structure the website's layout and elements.
 
-![wireframe design image](assests/wireframe/wireframe proj 1 kaizen fitness final design.jpg)
+![wireframe design image](assets/wireframe/wireframe-proj-1-kaizen-fitness-final-design.jpg)
 
 ---
 
