@@ -95,7 +95,6 @@ main {
   width: 100%;
   min-width: 150px;
   overflow: auto;
-  padding: 1rem;
   margin-top: 3.4rem;
 }
 
@@ -120,6 +119,7 @@ main {
   /* Added flex shorthand to take up any surplus space to push footer down */
   flex: 1 0 auto;
   overflow: hidden;
+  padding: 1.2%;
 }
 
 /*hero section*/
@@ -228,10 +228,7 @@ main {
 
 #img-aspect {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 1fr)
-  ); /* creates columns that are a minimum of 250px wide and take up equal fractional space and Adjusts based on your layout */
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); /* creates columns that are a minimum of 250px wide and take up equal fractional space and Adjusts based on your layout */
   gap: 10px; /* Adjust the gap between images */
 }
 
@@ -317,13 +314,9 @@ summary ~ p {
 }
 
 #contact-form input,
-select {
+select, textarea{
   margin-bottom: 2px;
   padding: 5px;
-}
-
-textarea {
-  margin-top: 5px;
 }
 
 /* Video */
@@ -411,13 +404,17 @@ footer {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 277px) {
+
+
+
+@media screen and (max-width: 275px) {
   footer {
     min-width: 195px;
     position: fixed;
     bottom: 0;
     width: 100vw;
   }
+
   main {
     position: fixed;
     top: 0;
@@ -425,10 +422,16 @@ footer {
     width: 100%;
   }
 }
+@media screen and (max-width: 351px) {
+  main{
+    margin-top: 4rem;
+  }
+}
 
-@media screen and (min-width: 324px) {
+
+@media screen and (min-width: 352px) and (max-width: 374px) {
   main {
-    margin-top: 1.9rem;
+    margin-top: 2rem;
   }
 }
 
@@ -572,12 +575,11 @@ footer {
   #contact-form {
     margin-right: -50vw;
   }
-  #contact-form input ~ textarea {
+  #contact-form input {
     font-size: 16px;
     width: 9rem;
     text-align: center;
     left: 40px;
-    margin-top: 10px;
   }
 
   #contact-form button {
@@ -609,7 +611,7 @@ footer {
   }
 
   .nav-toggler-label {
-    display: none; /* This is for removing the X which was the toggler symbol  as it is no longer needed on large screens */
+    display: none; /* This is for removing the X which was the toggler symbol as it is no longer needed on large screens */
   }
 
   #hero-image {
@@ -945,6 +947,10 @@ footer {
     padding: 10px 25px;
   }
 
+  textarea {
+    width: 19%;
+  }
+
   #section-whatweoffer {
     font-family: "Bungee Outline", sans-serif;
     font-size: 3.2rem;
@@ -1029,6 +1035,10 @@ footer {
     padding: 5px;
     font-size: 1.3rem;
     width: auto;
+  }
+
+  textarea {
+    width: 14.5%;
   }
 
   select {
