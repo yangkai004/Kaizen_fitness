@@ -98,4 +98,4 @@ I conducted performance testing using Lighthouse to evaluate various aspects of 
 ## Conclusion
 Building Kaizen Fitness has been an awesome learning experience for me in website creation using HTML and CSS. It's been a real eye-opener into how websites are made and how these codes work together. This project helped me dive deeper into the basics of web development.
 
-I'm really excited to keep improving and learning more about making websites and about web developing. This project is just the beginning, and I can't wait to see where it takes me in my coding journey. Thanks for being part of this journey with me on Kaizen Fitness!
+I'm really excited to keep improving and learning more about making websites and about web developing. This project is just the beginning, and I can't wait to see where it takes me in my coding journey. Thanks for being part of this journey with me on  Kaizen Fitness!
