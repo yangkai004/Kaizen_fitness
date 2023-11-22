@@ -362,7 +362,7 @@ input::placeholder {
 }
 
 iframe {
-  width: 100vw;
+  width: 95vw;
   height: 60vh;
   filter: invert(100%);
 }
@@ -404,12 +404,8 @@ footer {
   text-decoration: underline;
 }
 
-
-
-
 @media screen and (max-width: 275px) {
   footer {
-    min-width: 195px;
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -427,7 +423,6 @@ footer {
     margin-top: 4rem;
   }
 }
-
 
 @media screen and (min-width: 352px) and (max-width: 374px) {
   main {
