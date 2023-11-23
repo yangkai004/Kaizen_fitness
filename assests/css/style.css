@@ -127,7 +127,7 @@ main {
   width: auto;
   height: 640px;
   overflow: scroll;
-  background: url("/assests/images/hero image main.jpg") no-repeat center center /
+  background: url("/assests/images/hero-image-main.jpg") no-repeat center center /
     cover;
   text-align: left;
   position: relative;
