@@ -25,6 +25,7 @@ This wireframe represents the foundational design of the Kaizen Fitness website.
 
 ![wireframe design](assests/wireframe/wireframe.jpg)
 
+[this is my website](https://yangkai004.github.io/Kaizen_fitness/)
 ---
 
 
