@@ -94,6 +94,8 @@ I conducted performance testing using Lighthouse to evaluate various aspects of 
 
 - I got a bit of an idea of making this website when it comes to the button that links to different pages and the card formats that change to column or row format depending on the screensize of the device from [SubaxTech website](https://yasirwiifto.github.io/SubaxTech/)
 
+- I learnt how to do different colors mixed together on text using effect using the the same method from [Deecode](https://www.tiktok.com/@iamdillion/video/7267227667882052869?q=text%20gradient&t=1701129018120)
+
 ---
 
 ## Conclusion
